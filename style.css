@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #e0e5ec;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+
+main h1 {
+  padding: 1rem;
+  color: #333;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  width: 60vmin;
+  height: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5vmin;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  width: 18vmin;
+  height: 18vmin;
+  border: none;
+  border-radius: 15px;
+  font-size: 7vmin;
+  font-weight: bold;
+  color: #4d4d4d;
+  background: #e0e5ec;
+  box-shadow: 5px 5px 15px #a3b1c6,
+    -5px -5px 15px #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.box:active {
+  box-shadow: inset 3px 3px 10px #a3b1c6,
+    inset -3px -3px 10px #ffffff;
+}
+#reset_btn,
+#new_btn {
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  background-color: #e0e5ec;
+  color: #333;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px #a3b1c6,
+    -5px -5px 15px #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#reset_btn:hover,
+#new_btn:hover {
+  background-color: #d1d9e6;
+}
+
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#msg {
+  color: #444;
+  font-size: 6vmin;
+  font-weight: bold;
+}
+
+.hide {
+  display: none;
+}
